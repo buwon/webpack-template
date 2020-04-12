@@ -1,0 +1,38 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "task:clean": "rm -rf dist/",
+    "task:build": "webpack --mode='development' --devtool='source-map'",
+    "task:dist": "webpack",
+    "task:watch": "npm run task:build -- --watch",
+    "clean": "run-s task:clean",
+    "build": "run-s task:clean task:build",
+    "dist": "run-s task:clean task:dist",
+    "watch": "run-s task:clean task:watch"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "prettier": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^7.1.1",
+    "npm-run-all": "^4.1.5",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
