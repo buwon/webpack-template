@@ -14,7 +14,7 @@
     "watch": "run-s task:clean task:watch"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "prettier": "^2.0.4"
   },
   "devDependencies": {
