@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2019",
     "lib": ["DOM","ESNext"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
